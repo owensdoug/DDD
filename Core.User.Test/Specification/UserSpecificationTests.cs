@@ -20,6 +20,7 @@ namespace OwensDoug.Core.User.Test.Specification
 
             Assert.NotNull(result);
             Assert.Equal(UserBuilder.UserId1, result.Id);
+            Assert.Equal(UserBuilder.Name1, result.Name);
         }
     }
 }
