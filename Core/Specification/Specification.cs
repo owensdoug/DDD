@@ -16,11 +16,9 @@ namespace OwensDoug.Core.Specification
         public List<string> IncludeStrings { get; } = new List<string>();
         public Expression<Func<T, object>> OrderBy { get; private set; }
         public Expression<Func<T, object>> OrderByDescending { get; private set; }
-
         public int Take { get; private set; }
         public int Skip { get; private set; }
         public bool isPagingEnabled { get; private set; } = false;
-
         protected virtual void AddInclude(Expression<Func<T, object>> includeExpression)
         {
             Includes.Add(includeExpression);

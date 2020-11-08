@@ -8,7 +8,6 @@ namespace OwensDoug.Core.User
             : base(options)
         {
         }
-
         public DbSet<Entity.UserEntity> User { get; set; }
     }
 }
