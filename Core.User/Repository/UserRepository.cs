@@ -1,5 +1,5 @@
-﻿using OwensDoug.Core.Repository;
-using OwensDoug.Core.User.Entity;
+﻿using OwensDoug.Core.User.Entity;
+using OwensDoug.Core.Repository;
 
 namespace OwensDoug.Core.User.Repository
 {

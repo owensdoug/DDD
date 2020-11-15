@@ -1,8 +1,14 @@
-﻿namespace OwensDoug.Core.Entity
+﻿using System;
+
+namespace OwensDoug.Core.Entity
 {
-    public abstract class Entity : IEntity
+    public abstract class Entity : IEntity, IAudit
     {
         public virtual int Id { get; protected set; }
+        public DateTime CreatedOn { get; set; }
+        public int CreatedBy { get; set; }
+        public DateTime ChangedOn { get; set; }
+        public int ChangedBy { get; set; }
 
         int? _requestedHashCode;
 

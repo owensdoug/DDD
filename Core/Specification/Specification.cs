@@ -4,7 +4,6 @@ using System.Linq.Expressions;
 
 namespace OwensDoug.Core.Specification
 {
-    // Specification Pattern from : https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core
     public abstract class Specification<T> : ISpecification<T>
     {
         protected Specification(Expression<Func<T, bool>> criteria)
